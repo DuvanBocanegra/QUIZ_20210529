@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-void multiplicarMatriz(int argc, char** args){
+void MultiplicarMatriz(int argc, char** args){
   int af, ac, bf, bc, i, j, k;
   printf("Numero de renglonesde la matriz  A-->");
   scanf("%d", &af);
@@ -13,8 +13,6 @@ void multiplicarMatriz(int argc, char** args){
   scanf("%d", &bc);
   if(ac!=bf){
              printf("no es posible hacer la multiplicación\n");
-             system("pause");
-             return 0;
   }
   int A[af][ac], B[bf][bc], C[af][bc];
   for(i=0;i<af;i++){
